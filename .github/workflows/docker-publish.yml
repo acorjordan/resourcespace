@@ -34,5 +34,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ghcr.io/${{ github.repository }}/screenconditions:latest
-          ghcr.io/${{ github.repository }}/screenconditions:${{ steps.short-sha.outputs.sha }}
+          ghcr.io/${{ github.repository }}/resourcespace:latest
+          ghcr.io/${{ github.repository }}/resourcespace:${{ steps.short-sha.outputs.sha }}
