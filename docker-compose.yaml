@@ -19,8 +19,11 @@ services:
     image: mariadb
     container_name: mariadb
     restart: unless-stopped
-    env_file:
-      - db.env
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: resourcespace
+      MYSQL_USER: resourcespace
+      MYSQL_PASSWORD: password
     volumes:
       - mariadb:/var/lib/mysql
     networks:
